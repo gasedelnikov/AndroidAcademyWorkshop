@@ -31,13 +31,23 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginStart="-30dp"
-            android:background="@drawable/mask"
+            android:src="@drawable/mask"
+            android:contentDescription="@string/movie_view"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMovieCover"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             android:contentDescription="@string/movie_view"
             android:scaleType="centerCrop"
             android:src="@drawable/gradient_mask"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/imgMoviePoster"
+            app:layout_constraintBottom_toBottomOf="@+id/imgMoviePoster" />
 
         <ImageView
             android:id="@+id/imgPath"
@@ -54,7 +64,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:alpha="0.5"
             android:text="@string/back"
             android:textColor="@color/back"
             android:textSize="@dimen/small_text_size"
@@ -68,9 +77,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/age_admission"
+            android:padding="4dp"
+            android:background="@color/black"
             android:textColor="@color/movie_age_admission"
             app:layout_constraintBottom_toTopOf="@+id/txtMovieTitle"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart" />
 
         <TextView
             android:id="@+id/txtMovieTitle"
@@ -156,13 +167,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
             android:text="@string/reviews"
             android:textColor="@color/reviews"
             android:textSize="@dimen/normal_size"
             app:layout_constraintBottom_toBottomOf="@+id/imgStar1"
             app:layout_constraintStart_toEndOf="@+id/imgStar5"
-            app:layout_constraintTop_toBottomOf="@+id/txtMovieType" />
+            app:layout_constraintTop_toTopOf="@+id/imgStar1" />
 
         <TextView
             android:id="@+id/txtStoryline"
@@ -182,7 +192,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:alpha="0.75"
             android:text="@string/movie_desc"
             android:textColor="@color/movie_desc"
             android:textSize="@dimen/normal_size"
@@ -237,7 +246,6 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toEndOf="@+id/imgCast2"
             app:layout_constraintTop_toTopOf="@+id/imgCast2"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/cast3" />
 
         <ImageView
