@@ -12,6 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideVerticalStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideVerticalEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
         <ImageView
             android:id="@+id/imgMoviePoster"
             android:layout_width="match_parent"
@@ -29,13 +43,11 @@
             android:id="@+id/imgPath"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
             android:layout_marginTop="56dp"
             android:contentDescription="@string/movie_view"
             android:src="@drawable/ic_path"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <TextView
             android:id="@+id/txtBack"
@@ -64,38 +76,33 @@
             android:id="@+id/txtMovieTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:text="@string/movie_title"
             android:textColor="@color/movie_title"
             android:textSize="@dimen/name_text_size"
             app:layout_constraintBottom_toBottomOf="@+id/imgMoviePoster"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideVerticalEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/imgMoviePoster" />
 
         <TextView
             android:id="@+id/txtMovieType"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:layout_marginEnd="16dp"
             android:text="@string/movie_type"
             android:textColor="@color/movie_type"
             android:textSize="@dimen/normal_size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideVerticalEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/txtMovieTitle" />
 
         <ImageView
             android:id="@+id/imgStar1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/star_on"
-            app:layout_constraintStart_toStartOf="@+id/txtMovieType"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/txtMovieType"
             app:srcCompat="@drawable/ic_star_icon" />
 
@@ -161,14 +168,12 @@
             android:id="@+id/txtStoryline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
             android:text="@string/storyline"
             android:textColor="@color/white"
             android:textSize="@dimen/normal_size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideVerticalEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/txtReviews"
             app:lineHeight="20sp" />
 
@@ -176,15 +181,13 @@
             android:id="@+id/txtMovieDesc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:layout_marginEnd="16dp"
             android:alpha="0.75"
             android:text="@string/movie_desc"
             android:textColor="@color/movie_desc"
             android:textSize="@dimen/normal_size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideVerticalEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/txtStoryline"
             app:lineHeight="20sp" />
 
@@ -192,14 +195,12 @@
             android:id="@+id/txtCast"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
             android:text="@string/cast"
             android:textColor="@color/white"
             android:textSize="@dimen/normal_size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideVerticalEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/txtMovieDesc"
             app:lineHeight="20sp" />
 
@@ -207,11 +208,10 @@
             android:id="@+id/imgCast1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/robert_downey_jr"
             app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideVerticalStart"
             app:layout_constraintTop_toBottomOf="@+id/txtCast"
             app:srcCompat="@drawable/cast1" />
 
@@ -245,11 +245,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
             android:contentDescription="@string/chris_hemsworth"
             app:layout_constraintBottom_toBottomOf="@+id/imgCast1"
             app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideVerticalEnd"
             app:layout_constraintStart_toEndOf="@+id/imgCast3"
             app:layout_constraintTop_toTopOf="@+id/imgCast1"
             app:srcCompat="@drawable/cast4" />
@@ -302,7 +301,6 @@
             app:layout_constraintStart_toStartOf="@+id/imgCast4"
             app:layout_constraintTop_toTopOf="@+id/txtCast1"
             app:lineHeight="16sp" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
