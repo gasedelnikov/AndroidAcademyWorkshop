@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">AndroidAcademyWorkshop</string>
 
-    <string name="back"><![CDATA[< Back]]></string>
+    <string name="back">Back</string>
     <string name="movie_view">movie_view</string>
-    <string name="age_admission">+13</string>
+    <string name="age_admission">13+</string>
     <string name="movie_title">Avengers:\nEnd Game</string>
     <string name="movie_type">Action, Adventure, Fantasy</string>
     <string name="reviews">125 Reviews</string>
