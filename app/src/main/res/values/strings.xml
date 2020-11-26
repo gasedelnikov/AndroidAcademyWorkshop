@@ -5,6 +5,7 @@
     <string name="movie_view">movie_view</string>
     <string name="age_admission">13+</string>
     <string name="movie_title">Avengers:\nEnd Game</string>
+    <string name="movie_title2">Avengers: End Game</string>
     <string name="movie_type">Action, Adventure, Fantasy</string>
     <string name="reviews">125 Reviews</string>
     <string name="storyline">Storyline</string>
@@ -16,4 +17,6 @@
     <string name="chris_hemsworth">Chris Hemsworth</string>
     <string name="star_on">star on</string>
     <string name="star_off">star off</string>
+    <string name="like">like</string>
+    <string name="movies_list">Movies list</string>
 </resources>
