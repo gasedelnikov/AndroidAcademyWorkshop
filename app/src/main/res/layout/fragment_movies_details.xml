@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background"
-    tools:context=".MovieDetailsActivity">
+    android:background="@color/main_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_layout"
@@ -41,13 +40,14 @@
         <ImageView
             android:id="@+id/imgMovieCover"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="300dp"
             android:contentDescription="@string/movie_view"
             android:scaleType="centerCrop"
             android:src="@drawable/gradient_mask"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imgMoviePoster"
-            app:layout_constraintBottom_toBottomOf="@+id/imgMoviePoster" />
+            app:layout_constraintBottom_toBottomOf="@+id/imgMoviePoster"
+            />
 
         <ImageView
             android:id="@+id/imgPath"

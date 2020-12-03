@@ -1,8 +1,10 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
-
     <dimen name="small_text_size">12sp</dimen>
     <dimen name="normal_size">14sp</dimen>
     <dimen name="large_text_size">24sp</dimen>
     <dimen name="name_text_size">40sp</dimen>
+
+    <dimen name="poster_small_text_size">8sp</dimen>
+    <dimen name="poster_normal_size">@dimen/small_text_size</dimen>
+    <dimen name="poster_large_text_size">@dimen/normal_size</dimen>
 </resources>
