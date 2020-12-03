@@ -64,8 +64,6 @@
             android:contentDescription="@string/movie_view"
             android:radius="8dp"
             android:scaleType="centerCrop"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/movie_poster" />
 

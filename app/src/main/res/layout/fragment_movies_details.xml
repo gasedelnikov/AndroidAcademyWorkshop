@@ -46,7 +46,8 @@
             android:src="@drawable/gradient_mask"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imgMoviePoster"
-            app:layout_constraintBottom_toBottomOf="@+id/imgMoviePoster" />
+            app:layout_constraintBottom_toBottomOf="@+id/imgMoviePoster"
+            />
 
         <ImageView
             android:id="@+id/imgPath"
