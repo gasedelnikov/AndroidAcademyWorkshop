@@ -17,5 +17,8 @@
     <color name="main_background">#191926</color>
     <color name="movie_type">#FF3466</color>
     <color name="star_off">#6D6D80</color>
+    <color name="star_on">#FF3365</color>
+    <color name="like_off">#FFFFFF</color>
+    <color name="like_on">#FF3365</color>
     <color name="reviews">#6D6D80</color>
 </resources>

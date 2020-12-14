@@ -2,6 +2,7 @@ package com.gri.androidacademyworkshop
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.gri.androidacademyworkshop.model.Movie
 
 class MainActivity : AppCompatActivity(), FragmentMoviesDetails.FragmentMoviesDetailsClicks,
     FragmentMoviesList.FragmentMoviesListClicks {
@@ -18,8 +19,8 @@ class MainActivity : AppCompatActivity(), FragmentMoviesDetails.FragmentMoviesDe
         }
     }
 
-    override fun showMoviesDetailsFragment() {
-        val fragmentMoviesDetails = FragmentMoviesDetails()
+    override fun showMoviesDetailsFragment(movie: Movie) {
+        val fragmentMoviesDetails = FragmentMoviesDetails(movie)
         
         supportFragmentManager.beginTransaction()
             .add(R.id.main_container, fragmentMoviesDetails)
